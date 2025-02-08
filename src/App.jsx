@@ -1,7 +1,7 @@
 import Layout from './components/Layout'
 import Home from './components/Home/Home'
 // import { useQuery, gql } from "@apollo/client";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, HashRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 
 // const endpoint = 'https://leetcode.com/graphql/'
@@ -133,14 +133,14 @@ function App() {
   // console.log(data)
 
   return (
-      <Router basename='/leetcode'>
+      <HashRouter>
         <Routes>
           <Route element={<Layout />} />
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
           </Route>
         </Routes>
-      </Router>
+      </HashRouter>
   )
 }
 
