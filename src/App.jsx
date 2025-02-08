@@ -126,12 +126,12 @@ function App() {
   //       .then((data) => data.data)
   // })
 
-  const { data, loading, error } = useQuery(FILMS_QUERY);
+  // const { data, loading, error } = useQuery(FILMS_QUERY);
 
-  if (loading) return "Loading..."
-  if (error) return <pre>{ error.message }</pre>
+  // if (loading) return "Loading..."
+  // if (error) return <pre>{ error.message }</pre>
 
-  console.log(data)
+  // console.log(data)
 
   return (
       <Router>
