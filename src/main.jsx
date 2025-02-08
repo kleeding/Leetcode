@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+// import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import './index.css'
 import App from './App.jsx'
 
@@ -12,15 +12,15 @@ window.addEventListener("resize", function(event) {
   document.documentElement.style.setProperty('--vwh-scale', `${vscale}`);
 });
 
-const client = new ApolloClient({
-  uri: "https://leetcode.com/graphql/",
-  cache: new InMemoryCache()
-});
+// const client = new ApolloClient({
+//   uri: "https://leetcode.com/graphql/",
+//   cache: new InMemoryCache()
+// });
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ApolloProvider client={client}>
+    {/* <ApolloProvider client={client}> */}
       <App />
-    </ApolloProvider>
+    {/* </ApolloProvider> */}
   </StrictMode>,
 )
