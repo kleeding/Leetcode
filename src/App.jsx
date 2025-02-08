@@ -57,57 +57,56 @@ import './App.css'
 //     }
 //   }`
 
-const FILMS_QUERY = gql`
-  {
-    matchedUser(username: "kehneh") {
-        username
-        profile {
-        ranking
-        }
-        submitStats: submitStatsGlobal 
-        {
-        acSubmissionNum 
-        {
-            difficulty
-            count
-            submissions
-        }
-        totalSubmissionNum
-        {
-            difficulty
-            count
-            submissions
-        }
-        }
-        languageProblemCount {
-        languageName
-        problemsSolved
-        }
-        tagProblemCounts {
-        advanced {
-            tagName
-            tagSlug
-            problemsSolved
-        }
-        intermediate {
-            tagName
-            tagSlug
-            problemsSolved
-        }
-        fundamental {
-            tagName
-            tagSlug
-            problemsSolved
-        }
-        }
-    }
-    allQuestionsCount
-    {
-        difficulty
-        count
-    }
-  }
-`;
+// const FILMS_QUERY = gql`
+//   {
+//     matchedUser(username: "kehneh") {
+//         username
+//         profile {
+//         ranking
+//         }
+//         submitStats: submitStatsGlobal 
+//         {
+//         acSubmissionNum 
+//         {
+//             difficulty
+//             count
+//             submissions
+//         }
+//         totalSubmissionNum
+//         {
+//             difficulty
+//             count
+//             submissions
+//         }
+//         }
+//         languageProblemCount {
+//         languageName
+//         problemsSolved
+//         }
+//         tagProblemCounts {
+//         advanced {
+//             tagName
+//             tagSlug
+//             problemsSolved
+//         }
+//         intermediate {
+//             tagName
+//             tagSlug
+//             problemsSolved
+//         }
+//         fundamental {
+//             tagName
+//             tagSlug
+//             problemsSolved
+//         }
+//         }
+//     }
+//     allQuestionsCount
+//     {
+//         difficulty
+//         count
+//     }
+//   }`
 
 function App() {
   // const { data, isLoading, error } = useQuery("profile", () => {
