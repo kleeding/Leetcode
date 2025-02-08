@@ -1,0 +1,96 @@
+nav {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.nav-title {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: auto 1em;
+  /* justify-self: ; */
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+/* .nav-title.secondary {
+} */
+
+.nav-title:link,
+.nav-title:visited,
+.nav-title:hover,
+.nav-title:active {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+@supports not (-webkit-touch-callout: none) {
+  .theme-icons {
+    background-color: aqua;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    margin: auto 2em;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    z-index: 1;
+  }
+
+  .theme-toggle-container-sun {
+    cursor: pointer;
+    display: block;
+    margin: 5px 0 0 0;
+    width: 35px;
+    height: 35px;
+  }
+
+  .theme-toggle-container-sun.is-toggled {
+    display: none;
+  }
+
+  .theme-toggle-container-moon {
+    cursor: pointer;
+    display: none;
+  }
+
+  .theme-toggle-container-moon.is-toggled {
+    display: block;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+  }
+
+  .theme-moon-icon {
+    fill: #242424;
+  }
+
+  .theme-screen {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: -1px;
+    right: -1px;
+    scale: 1;
+    width: 1px;
+    height: 1px;
+    border-radius: 1px;
+    transition: transform 1s ease-in-out;
+    mix-blend-mode: difference;
+    pointer-events: none;
+  }
+
+  .theme-screen.is-toggled {
+    transform: scale(var(--vwh-scale));
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  .theme-icons {
+    display: none;
+  }
+}

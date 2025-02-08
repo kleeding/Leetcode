@@ -1,42 +1,62 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.full-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 960px;
+  min-height: calc(100% - 80px);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.content {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.section-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #343434;
+  border-radius: 2rem;
+  width: 250px;
+}
+
+/* .section-container:hover {
+  box-shadow: 5px 5px rgba(255, 255, 255, 0.87);
+} */
+
+.section-title-container {
+  display: flex;
+  font-size: 2rem;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.section-icon {
+  font-size: 2rem;
+  margin: 0.2em 0 0 0;
+  align-self: flex-start;
+  z-index: 1;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin: 0.2em 0 0 0;
+  align-self: flex-start;
+}
+
+.section-icon {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.section-icon.background {
+  fill: #343434;
+}
+
+@media (max-width: 615px) {
+  .section-container {
+    width: 80vw;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
