@@ -58,7 +58,7 @@ import './App.css'
 function App() {
   console.log(5)
   // let leet = require('./leetcode');
-  leet()
+  // leet()
 
   // const data = loadData()
   // console.log("profile data:", data)
